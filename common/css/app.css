@@ -1,0 +1,84 @@
+html,body{
+    height: 100%;
+}
+
+body{
+    background-color: #FFFFFF;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.book-tab{
+  margin: 20px;
+  float: left;
+  position: relative;
+}
+
+.book-img{
+  width: 100px;
+  height: 150px;
+}
+
+.book-title{
+  word-break: break-all;
+}
+
+.book-author{
+  font-size: 12px;
+  color: gray;
+  word-break: break-all;
+}
+
+.w-40{
+  width: 40px;
+}
+
+.c-select{
+  opacity: 0;
+  width: 40px;
+  margin-left: -30px;
+}
+
+.btn-c{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 80%;
+}
+
+.b-main{
+  position: relative;
+}
+
+.b-sub1{
+    position: absolute;
+    left: 40%;
+    bottom: 65px;
+}
+
+.search-btn{
+    position: fixed;
+    bottom: 20px;
+    left: 95%;
+}
+
+.m-15{
+  margin: 15px 0;
+}
+
+.back-to{
+  float: left;
+  margin: 20px;
+}
+
+.s-box{
+  margin: 20px;
+  width: 100%;
+}
+
+
+/*input[type='text'] {
+    background-image: url(images/comment-author.gif);
+    background-position: 7px 7px;
+    background-repeat: no-repeat;
+}*/

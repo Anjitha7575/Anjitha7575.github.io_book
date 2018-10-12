@@ -1,0 +1,40 @@
+<div class="container-fluid">
+	<h2>Currently Reading</h2>
+	<hr/>
+  <div class="row">
+    <div class='col-xs-3 col-xs-3-offset-3' ng-repeat="cItem in allBooks | filter: {userCategory : 'CR'} ">
+    	<div class="book-tab">
+    		<img class="book-img" ng-src="{{cItem.thumbnailUrl}}" >
+		  	<div class="book-title">{{cItem.title}}</div>
+		  	<div class="book-author">{{cItem.authors[0]}}</div>
+	  	</div>
+	  	<select-category class="b-sub1" data="cItem.userCategory" actions="actions"></select-category >
+    </div>
+  </div>
+  <h2>Wanted To Read</h2>
+	<hr/>
+  <div class="row">
+    <div class='col-xs-3 col-xs-3-offset-3' ng-repeat="cItem in allBooks | filter: {userCategory : 'WR'}">
+    	<div class="book-tab">
+	  	<img class="book-img" ng-src="{{cItem.thumbnailUrl}}" >
+	  	<div class="book-title">{{cItem.title}}</div>
+	  	<div class="book-author">{{cItem.authors[0]}}</div>
+	  </div>
+	  	  	<select-category class="b-sub1" data="cItem.userCategory" actions="actions"></select-category>
+    </div>
+  </div>
+  <h2>Read</h2>
+	<hr/>
+  <div class="row">
+    <div class='col-xs-3 col-xs-3-offset-3' ng-repeat="cItem in allBooks | filter: {userCategory : 'RD'}">
+    	<div class="book-tab">
+	  	<img class="book-img" ng-src="{{cItem.thumbnailUrl}}" >
+	  	<div class="book-title">{{cItem.title}}</div>
+	  	<div class="book-author">{{cItem.authors[0]}}</div>
+	  </div>
+	  	  	<select-category class="b-sub1" data="cItem.userCategory" actions="actions"></select-category>
+    </div>
+  </div>
+</div>
+<div class="btn btn-default btn-c search-btn" ng-click="search()"><i class="fa fa-plus" aria-hidden="true"></i>
+</div>

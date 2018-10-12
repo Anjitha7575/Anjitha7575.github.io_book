@@ -1,0 +1,19 @@
+<div class="container-fluid">
+	<div class="row m-15">
+<div ng-click="backTo()" class="col-md-1"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
+<input class=" col-md-11" placeholder="Search...." type="text" ng-model="searchText">
+	 </div>
+
+  <div class="row">
+    <div class='col-xs-3 col-xs-3-offset-3' ng-if="searchText.length >0 " ng-repeat="cItem in allBooks | filter :searchText">
+    	<div class="book-tab">
+    		<img class="book-img" ng-src="{{cItem.thumbnailUrl}}" >
+		  	<div class="book-title">{{cItem.title}}</div>
+		  	<div class="book-author">{{cItem.authors[0]}}</div>
+	  	</div>
+	  	<select-category class="b-sub1" data="cItem.userCategory" actions="actions"></select-category>
+    </div>
+    <div ng-if="!searchText.length >0" ></div>
+  </div>
+  
+</div>
